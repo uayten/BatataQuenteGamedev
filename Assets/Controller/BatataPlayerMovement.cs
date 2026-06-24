@@ -35,7 +35,7 @@ public class BatataPlayerMovement : MonoBehaviour
 
         // Se há qualquer valor de input, ele está andando.
         bool estaMovendo = entradaReal.magnitude > 0.1f;
-        animador.SetBool("isWalking", estaMovendo);
+        animador.SetBool("Andando", estaMovendo);
 
         // --- Delay para não rotacionar quando soltar W e D ao mesmo tempo ---
 

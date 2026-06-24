@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class BatataSpriteDirection : MonoBehaviour
 {
+    //Script para controlar a direção do sprite do personagem baseado na câmera e no corpo do personagem
+    //Atualiza o animator para a direção correta e também inverte o sprite quando necessário
+
     private Animator animador;
     private SpriteRenderer renderizador;
     private Transform cameraPrincipal;

@@ -925,7 +925,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7.1.Damage_Frente1
+      name: 7.1.TakeDamage_Frente1
       rect:
         serializedVersion: 2
         x: 64
@@ -1079,7 +1079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7.2.Damage_Lado1
+      name: 7.2.TakeDamage_Lado1
       rect:
         serializedVersion: 2
         x: 64
@@ -1189,7 +1189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 7.3.Damage_Costas1
+      name: 7.3.TakeDamage_Costas1
       rect:
         serializedVersion: 2
         x: 64
@@ -1218,8 +1218,8 @@ TextureImporter:
         y: 0
         width: 16
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1288,9 +1288,9 @@ TextureImporter:
       6.1.Slash_Frente1: 1835487149
       6.2.Slash_Lado1: 800554823
       6.3.Slash_Costas1: -571315697
-      7.1.Damage_Frente1: -1259152974
-      7.2.Damage_Lado1: -1047265599
-      7.3.Damage_Costas1: 1053598448
+      7.1.TakeDamage_Frente1: -1259152974
+      7.2.TakeDamage_Lado1: -1047265599
+      7.3.TakeDamage_Costas1: 1053598448
       8.1.Dead_Frente1: 1758105806
       8.2.Dead_Lado1: 1014691171
       8.3.Dead_Costas1: 928820553
