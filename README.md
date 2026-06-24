@@ -20,10 +20,10 @@ Não sabe usar Unity, C#, Git ou GitHub? Não tem problema, essa é a hora perfe
 ## 🛠️ O Que Estamos Usando
 * **Engine:** Unity **6000.4.7f1** (Usem essa versão exata para não quebrar tudo logo no primeiro dia!)
 * **Linguagem:** C#
-* **Estilo Visual:** 2D (Tema e Gênero totalmente livres!)
+* **Estilo Visual:** 2D, 2.5D ou 3D (Tema e Gênero totalmente livres!)
 * **Arquitetura:** "Deixa a vida me levar"
 
-> **Por que Unity, C# e 2D?** 
+> **Por que Unity e C#?** 
 > A ideia é que eu não precise colocar a mão no código, mas se algo der muito errado, eu preciso conseguir consertar. Eu também domino Godot, mas como a maioria da comunidade que usa a engine prefere GDScript e o meu foco é C#, vamos de Unity para evitar divisões. Se der certo, testamos outras ferramentas no futuro!
 
 ## 🤝 Comunidade e Interação
@@ -45,7 +45,7 @@ Nós vamos agendar um dia para você mexer. Chegou o seu dia? Você tem **24 hor
 
 1. **UMA ÚNICA CENA:** O projeto tem que rodar inteiro na cena chamada `Game`. Todo mundo PRECISA usar a mesma cena para não criarmos vários jogos isolados dentro do mesmo projeto.
 2. **Uso de IA Liberado:** O uso de inteligência artificial está totalmente liberado e incentivado! Fiquem à vontade para usar ferramentas como Claude Code, Antigravity, Codex ou qualquer outra que auxilie no fluxo de desenvolvimento de vocês.
-3. **Proporção é Documento:** O estilo 2D não precisa ser mantido (pode misturar pixel art com outras coisas), MAS as coisas precisam ter tamanhos proporcionais. Se o dev anterior fez um personagem e você for criar um cenário, o personagem precisa ser escalado de forma coerente.
+3. **Proporção é Documento:** O estilo visual não precisa ser mantido (2D, 2.5D e 3D são permitidos, pode misturar pixel art com outras coisas), MAS as coisas precisam ter tamanhos proporcionais. Se o dev anterior fez um personagem e você for criar um cenário, o personagem precisa ser escalado de forma coerente.
 4. **Cuidado com Assets e Direitos Autorais (⚠️ IMPORTANTE):** Eu prefiro que **não utilizem assets de terceiros**. Caso realmente precisem, SÓ SÃO PERMITIDOS assets 100% gratuitos e com licenças permissivas (como MIT e CC0). **Regra de Ouro:** Se usar um asset, o link dele DEVE ser colocado no arquivo `ASSETS.md`. Usar assets sem permissão pode gerar processo. Quem fizer isso está sujeito a banimento imediato e expulsão do projeto. 
 5. **Artistas são bem-vindos:** Se você é artista, pode baixar o projeto, colocar suas artes em alguma pasta e commitar. Porém, não há garantia de que alguém vai usar sua arte no jogo.
 6. **Contribuições Pequenas Valem:** O seu PR será testado para garantir que não é sacanagem. No entanto, não é preciso fazer sistemas gigantescos. Se a sua contribuição for pequena, mas fizer diferença, ela será aceita! Entendemos que muita gente trabalha e tem pouco tempo.
