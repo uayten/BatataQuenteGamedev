@@ -9,7 +9,15 @@ public class BatataPlayerMovement : MonoBehaviour
 
     [Header("Configuração de Controles")]
     public InputActionReference referenciaMover;
+    public InputActionReference referenciaSprint;
+    public InputActionReference referenciaPulo;
     public float velocidade = 5f;
+    public float multiplicadorSprint = 1.6f;
+
+    [Header("Configuração de Pulo e Gravidade")]
+    public float forcaPulo = 6f;
+    public float gravidade = 15f;
+    private float velocidadeVertical = 0f;
 
     [Header("Filtro de Soltura (Dead Zone)")]
     public float tempoFiltro = 0.05f; // 50 milissegundos de tolerância
@@ -22,6 +30,8 @@ public class BatataPlayerMovement : MonoBehaviour
         controle = GetComponent<CharacterController>();
         animador = GetComponentInChildren<Animator>();
         referenciaMover.action.Enable();
+        if (referenciaSprint != null) referenciaSprint.action.Enable();
+        if (referenciaPulo != null) referenciaPulo.action.Enable();
 
         if (Camera.main != null)
         {
@@ -100,6 +110,35 @@ public class BatataPlayerMovement : MonoBehaviour
             transform.rotation = rotacaoAlvo;
         }
 
-        controle.Move(direcao * velocidade * Time.deltaTime);
+        // --- Lógica de Corrida (Sprint) ---
+        float velocidadeAtual = velocidade;
+        if (referenciaSprint != null && referenciaSprint.action.IsPressed())
+        {
+            velocidadeAtual *= multiplicadorSprint;
+        }
+
+        // --- Lógica de Pulo e Gravidade ---
+        if (controle.isGrounded)
+        {
+            if (velocidadeVertical < 0f)
+            {
+                velocidadeVertical = -1f; // Mantém o jogador firme no chão
+            }
+
+            if (referenciaPulo != null && referenciaPulo.action.WasPressedThisFrame())
+            {
+                velocidadeVertical = forcaPulo;
+            }
+        }
+        else
+        {
+            velocidadeVertical -= gravidade * Time.deltaTime;
+        }
+
+        // --- Executa o Movimento Combinado ---
+        Vector3 movimento = direcao * velocidadeAtual;
+        movimento.y = velocidadeVertical;
+
+        controle.Move(movimento * Time.deltaTime);
     }
 }
